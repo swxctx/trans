@@ -4,7 +4,7 @@ import "fmt"
 
 func (trans *Trans) reload() error {
 	// read file
-	dataList, err := ReadCsv(trans.Config.FilePath)
+	dataList, err := readCsv(trans.Config.FilePath)
 	if err != nil {
 		return err
 	}

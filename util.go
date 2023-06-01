@@ -5,8 +5,8 @@ import (
 	"os"
 )
 
-// ReadCsv 读取csv文件
-func ReadCsv(file string) ([][]string, error) {
+// readCsv 读取csv文件
+func readCsv(file string) ([][]string, error) {
 	var (
 		rows [][]string
 		err  error
